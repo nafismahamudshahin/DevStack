@@ -2,13 +2,18 @@ import { use, useState } from "react";
 import type { ITechnology } from "../types/Types";
 import TechnologyCard from "./TechnologyCard";
 import StackCard from "./StackCard";
+import { toast } from "react-toastify";
 interface TechnologyPromise {
     technologiesPromise: Promise<ITechnology[]>
 }
 
 const TechnologyExplorer = ({ technologiesPromise }: TechnologyPromise) => {
-    const stacks = use(technologiesPromise);
+    const technologies = use(technologiesPromise);
     const [selectedTechnology, setSelectedTechnology] = useState<ITechnology[]>([]);
+    const handleRemoveAllStocks = (): void => {
+        setSelectedTechnology([]);
+        toast.success("All Technology remove from Stacks");
+    }
     return (
         <section className="container mx-auto">
             <div>
@@ -17,7 +22,7 @@ const TechnologyExplorer = ({ technologiesPromise }: TechnologyPromise) => {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mt-8">
                     <div className="col-span-12 md:col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {
-                            stacks.map(stack => <TechnologyCard key={stack.id} stack={stack} selectedTechnology={selectedTechnology} setSelectedTechnology={setSelectedTechnology}></TechnologyCard>)
+                            technologies.map(technology => <TechnologyCard key={technology.id} technology={technology} selectedTechnology={selectedTechnology} setSelectedTechnology={setSelectedTechnology}></TechnologyCard>)
                         }
                     </div>
                     <div className="col-span-12 md:col-span-3">
@@ -28,10 +33,10 @@ const TechnologyExplorer = ({ technologiesPromise }: TechnologyPromise) => {
                                 {
                                     (selectedTechnology.length) === 0 ? <div className="border border-dashed rounded-2xl w-full py-10">
                                         <p className="text-[#64748B] text-center">Your stack is empty.</p>
-                                    </div > : <div className="grid gap-3">{selectedTechnology.map(technology => <StackCard key={technology.id} technology={technology}></StackCard>)}</div>
+                                    </div > : <div className="grid gap-3">{selectedTechnology.map(technology => <StackCard key={technology.id} technology={technology} selectedTechnology={selectedTechnology} setSelectedTechnology={setSelectedTechnology}></StackCard>)}</div>
                                 }
                             </div>
-                            <button className={`btn ${selectedTechnology.length > 1 ? "block" : "hidden"} rounded-2xl w-full border border-red-500 text-red-500`}>Remove All</button>
+                            <button onClick={() => handleRemoveAllStocks()} className={`btn ${selectedTechnology.length > 1 ? "block" : "hidden"} rounded-2xl w-full border border-red-500 text-red-500`}>Remove All</button>
                         </div>
                     </div>
                 </div>
