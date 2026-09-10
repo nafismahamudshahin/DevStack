@@ -2,7 +2,7 @@ import { VscThreeBars } from "react-icons/vsc";
 import Logo from "../assets/logo-text.png";
 const Navbar = () => {
     return (
-        <nav className="sticky top-0 z-50 border-b border-slate-200">
+        <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white">
             <div className="container mx-auto py-6 flex justify-between items-center">
                 {/* logo */}
                 <div>
