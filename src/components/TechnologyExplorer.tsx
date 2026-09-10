@@ -1,6 +1,7 @@
 import { use, useState } from "react";
 import type { ITechnology } from "../types/Types";
 import TechnologyCard from "./TechnologyCard";
+import StackCard from "./StackCard";
 interface TechnologyPromise {
     technologiesPromise: Promise<ITechnology[]>
 }
@@ -27,7 +28,7 @@ const TechnologyExplorer = ({ technologiesPromise }: TechnologyPromise) => {
                                 {
                                     (selectedTechnology.length) === 0 ? <div className="border border-dashed rounded-2xl w-full py-10">
                                         <p className="text-[#64748B] text-center">Your stack is empty.</p>
-                                    </div> : selectedTechnology.map(technology => <li key={technology.id}>{technology.name}</li>)
+                                    </div > : <div className="grid gap-3">{selectedTechnology.map(technology => <StackCard key={technology.id} technology={technology}></StackCard>)}</div>
                                 }
                             </div>
                             <button className={`btn ${selectedTechnology.length > 1 ? "block" : "hidden"} rounded-2xl w-full border border-red-500 text-red-500`}>Remove All</button>

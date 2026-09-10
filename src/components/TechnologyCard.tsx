@@ -16,7 +16,7 @@ const TechnologyCard = ({ stack, selectedTechnology, setSelectedTechnology }: IT
     }
     return (
         <div>
-            <div className={` bg-base-100 shadow-md px-5 py-7 rounded-2xl space-y-6 ${select ? "border-2 border-pink-500" : "border-2 border-transparent"}`}>
+            <div className={` bg-base-100 shadow-md px-5 py-7 rounded-2xl space-y-6 ${select ? "border-2 border-pink-500 shadow-xl" : "border-2 border-slate-200"}`}>
                 <div className="flex justify-between">
                     <div>
                         <img className="w-15" src={stack.icon} alt={stack.name} />
