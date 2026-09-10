@@ -1,5 +1,6 @@
 import Logo from '../assets/logo-text.png';
 const Footer = () => {
+    const date = new Date().getFullYear();
     return (
         <footer className=" bg-base-200">
 
@@ -8,7 +9,7 @@ const Footer = () => {
                     <div className='flex justify-center md:justify-start'>
                         <img src={Logo} alt="DevStack Logo" />
                     </div>
-                    <p className='text-[#64748B] text-center mx-auto md:mx-0 w-[70%]'>Curated tools, technologies, and resources for developers building modern software.</p>
+                    <p className='text-[#64748B] text-center md:text-start mx-auto md:mx-0 w-[70%]'>Curated tools, technologies, and resources for developers building modern software.</p>
                     <div className=''>
                         <ul className='flex justify-center md:justify-start gap-5 font-semibold text-[#475569]'>
                             <li><a href="#">GitHub</a></li>
@@ -39,7 +40,7 @@ const Footer = () => {
                 </nav>
             </div>
             <div className='container mx-auto pb-10 pt-4 flex justify-between text-[#64748B]'>
-                <p className=''>© 2026 Dev Stack. All rights reserved.</p>
+                <p className=''>© {date} Dev Stack. All rights reserved.</p>
                 <div>
                     <ul className='flex gap-3'>
                         <li><a href="">Privacy</a></li>

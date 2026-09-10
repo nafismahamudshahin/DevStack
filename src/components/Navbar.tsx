@@ -2,8 +2,8 @@ import { VscThreeBars } from "react-icons/vsc";
 import Logo from "../assets/logo-text.png";
 const Navbar = () => {
     return (
-        <nav className="sticky top-0 z-50 border-b border-slate-200 bg-white">
-            <div className="container mx-auto py-6 flex justify-between items-center">
+        <nav className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur-3xl">
+            <div className="container mx-auto py-3 flex justify-between items-center">
                 {/* logo */}
                 <div>
                     <img src={Logo} alt="DevStack Logo" />
@@ -19,7 +19,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex items-center gap-3">
                     <button className="hidden md:block rounded-lg px-4 py-2 text-[15px] font-semibold text-slate-700 transition-all duration-200 hover:bg-slate-100">Sign In</button>
-                    <button className="hidden md:block btn rounded-lg bg-[#DB2777] px-5 py-2.5 text-[15px] font-semibold text-white shadow-md  transition-all duration-200 hover:bg-[#eb0c71] hover:shadow-lg">Sign Up</button>
+                    <button className="hidden md:block btn rounded-lg bg-pink-500 px-5 py-2 text-[15px] font-semibold text-white shadow-md  transition-all duration-200 hover:bg-[#eb0c71] hover:shadow-lg">Sign Up</button>
                     <VscThreeBars className="md:hidden text-3xl" />
                 </div>
             </div>

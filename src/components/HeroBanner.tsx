@@ -16,7 +16,7 @@ const HeroBanner = () => {
                 </div>
                 {/* Right */}
                 <div className="flex justify-center items-center">
-                    <img src={HeroImg} alt="" />
+                    <img src={HeroImg} alt="Hero banner image" />
                 </div>
             </div>
         </section>
