@@ -6,7 +6,7 @@ interface ITechnologyCard {
 }
 const TechnologyCard = ({ stack }: ITechnologyCard) => {
     return (
-        <div className="bg-base-100 shadow-sm px-5 py-7 rounded-md space-y-6">
+        <div className="bg-base-100 shadow-md px-5 py-7 rounded-2xl space-y-6">
             <div className="flex justify-between">
                 <div>
                     <img className="w-15" src={stack.icon} alt={stack.name} />
@@ -29,7 +29,7 @@ const TechnologyCard = ({ stack }: ITechnologyCard) => {
                     </div>
                 </div>
             </div>
-            <button className="btn w-full bg-[#0A0F1D] text-white">Add to Stack</button>
+            <button className="btn rounded-2xl w-full bg-[#0A0F1D] text-white">Add to Stack</button>
         </div>
     );
 };
