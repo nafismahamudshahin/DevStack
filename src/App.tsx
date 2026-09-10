@@ -3,6 +3,7 @@ import HeroBanner from "./components/HeroBanner"
 import Navbar from "./components/Navbar"
 import TechnologyExplorer from "./components/TechnologyExplorer"
 import type { ITechnology } from "./types/Types";
+import Footer from "./components/Footer";
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <Suspense fallback={<span className="loading loading-spinner text-secondary"></span>}>
         <TechnologyExplorer technologiesPromise={technologiesPromise()}></TechnologyExplorer>
       </Suspense>
+      <Footer></Footer>
     </>
   )
 }
