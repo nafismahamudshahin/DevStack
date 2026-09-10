@@ -1,4 +1,4 @@
-import { use } from "react";
+import { use, useState } from "react";
 import type { ITechnology } from "../types/Types";
 import TechnologyCard from "./TechnologyCard";
 interface TechnologyPromise {
@@ -7,7 +7,7 @@ interface TechnologyPromise {
 
 const TechnologyExplorer = ({ technologiesPromise }: TechnologyPromise) => {
     const stacks = use(technologiesPromise);
-    console.log(stacks)
+    const [selectedTechnology, setSelectedTechnology] = useState<ITechnology[]>([]);
     return (
         <section className="container mx-auto">
             <div>
@@ -16,20 +16,21 @@ const TechnologyExplorer = ({ technologiesPromise }: TechnologyPromise) => {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mt-8">
                     <div className="col-span-12 md:col-span-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {
-                            stacks.map(stack => <TechnologyCard key={stack.id} stack={stack}></TechnologyCard>)
+                            stacks.map(stack => <TechnologyCard key={stack.id} stack={stack} selectedTechnology={selectedTechnology} setSelectedTechnology={setSelectedTechnology}></TechnologyCard>)
                         }
                     </div>
                     <div className="col-span-12 md:col-span-3">
                         <div className="bg-base-100 shadow-sm px-5 py-7 rounded-2xl space-y-6">
-                            <b className="text-3xl ">Your Stack</b>
-                            <p className="text-[24px] text-[#64748B]">2 Technology Selected</p>
+                            <b className="text-2xl ">Your Stack</b>
+                            <p className="text-[20px] text-[#64748B]">{selectedTechnology.length != 0 ? `${selectedTechnology.length} Technology Selected` : "No technologies selected yet."}</p>
                             <div>
-
+                                {
+                                    (selectedTechnology.length) === 0 ? <div className="border border-dashed rounded-2xl w-full py-10">
+                                        <p className="text-[#64748B] text-center">Your stack is empty.</p>
+                                    </div> : selectedTechnology.map(technology => <li key={technology.id}>{technology.name}</li>)
+                                }
                             </div>
-                            <div className="border border-dashed rounded-2xl w-full py-10">
-                                <p className="text-[#64748B] text-center">Your stack is empty.</p>
-                            </div>
-                            <button className="btn rounded-2xl w-full border border-red-500 text-red-500">Remove All</button>
+                            <button className={`btn ${selectedTechnology.length > 1 ? "block" : "hidden"} rounded-2xl w-full border border-red-500 text-red-500`}>Remove All</button>
                         </div>
                     </div>
                 </div>
