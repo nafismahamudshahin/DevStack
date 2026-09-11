@@ -18,7 +18,7 @@ function App() {
     <>
       <Navbar></Navbar>
       <HeroBanner></HeroBanner>
-      <Suspense fallback={<span className="loading loading-spinner text-secondary"></span>}>
+      <Suspense fallback={<div className="flex justify-center"><span className="loading loading-spinner text-secondary"></span></div>}>
         <TechnologyExplorer technologiesPromise={technologiesPromise()}></TechnologyExplorer>
       </Suspense>
       <Footer></Footer>
