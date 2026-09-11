@@ -19,18 +19,18 @@ const StackCard = ({ technology, selectedTechnology, setSelectedTechnology }: IS
     }
     return (
         <div className="flex items-center justify-between rounded-2xl border-2 border-slate-200 bg-white p-2 shadow-sm">
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-2 xl:gap-5">
                 <div className="flex h-16 w-16 items-center justify-center">
-                    <img src={technology.icon} alt={technology.name} className="h-14 w-14 object-contain" />
+                    <img src={technology.icon} alt={technology.name} className="md:w-10 lg:w-12 xl:w-14 object-contain" />
                 </div>
                 <div>
-                    <h3 className="text-xl font-bold text-slate-900">{technology.name}</h3>
+                    <h3 className="text-md xl:text-xl font-bold text-slate-900">{technology.name}</h3>
 
                     <p className="text-sm font-medium text-slate-400">{technology.category}</p>
                 </div>
             </div>
             <button onClick={() => handleRemoveTechnology(technology)} className="flex h-12 w-12 items-center justify-center text-slate-400 transition hover:text-slate-600">
-                <IoCloseSharp className="text-5xl font-light leading-none" />
+                <IoCloseSharp className="text-2xl lg:text-3xl xl:text-5xl font-light leading-none" />
             </button>
         </div>
     );

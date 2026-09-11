@@ -6,7 +6,7 @@
         "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
         "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
         "rating": 4.9,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Beginner",
         "badge": "Popular"
     },
     {
@@ -16,7 +16,7 @@
         "description": "A progressive JavaScript framework for building interactive and scalable user interfaces.",
         "icon": "https://icon.icepanel.io/Technology/svg/Vue.js.svg",
         "rating": 4.8,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Beginner",
         "badge": "Easy to Learn"
     },
     {
@@ -46,7 +46,7 @@
         "description": "A versatile programming language used to create dynamic and interactive web applications.",
         "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
         "rating": 4.9,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Beginner",
         "badge": "Essential"
     },
     {
@@ -86,7 +86,7 @@
         "description": "A flexible NoSQL document database designed for modern application development.",
         "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
         "rating": 4.8,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Beginner",
         "badge": "NoSQL"
     },
     {
@@ -116,7 +116,7 @@
         "description": "A utility-first CSS framework for rapidly building modern and responsive user interfaces.",
         "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
         "rating": 4.9,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Beginner",
         "badge": "Trending"
     },
     {
@@ -126,17 +126,17 @@
         "description": "A popular frontend framework providing responsive layouts and reusable UI components.",
         "icon": "https://icon.icepanel.io/Technology/svg/Bootstrap.svg",
         "rating": 4.7,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Beginner",
         "badge": "Classic"
     },
     {
         "id": "python",
         "name": "Python",
         "category": "Language",
-        "description": "A versatile and beginner-friendly programming language widely used in web development and data science.",
+        "description": "A versatile and beginner programming language widely used in web development.",
         "icon": "https://icon.icepanel.io/Technology/svg/Python.svg",
         "rating": 4.9,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Beginner",
         "badge": "Popular"
     },
     {
@@ -153,10 +153,10 @@
         "id": "firebase",
         "name": "Firebase",
         "category": "Backend",
-        "description": "A Google platform providing authentication, databases, hosting, storage, and other backend services.",
+        "description": "A Google platform providing authentication, databases, hosting, storage, and other services.",
         "icon": "https://icon.icepanel.io/Technology/svg/Firebase.svg",
         "rating": 4.7,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Beginner",
         "badge": "Google"
     },
     {
@@ -176,24 +176,24 @@
         "description": "A distributed version control system used to track code changes and collaborate with developers.",
         "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
         "rating": 4.9,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Beginner",
         "badge": "Essential"
     },
     {
         "id": "github",
         "name": "GitHub",
         "category": "Tools",
-        "description": "A developer platform for hosting code, managing projects, and collaborating with development teams.",
+        "description": "A developer platform for hosting code, managing projects, and collaborating with teams.",
         "icon": "https://icon.icepanel.io/Technology/svg/GitHub.svg",
         "rating": 4.9,
-        "difficulty": "Beginner-Friendly",
+        "difficulty": "Beginner",
         "badge": "Essential"
     },
     {
         "id": "redis",
         "name": "Redis",
         "category": "Database",
-        "description": "An in-memory data store commonly used for caching, sessions, queues, and real-time applications.",
+        "description": "An in-memory data store commonly used for caching, sessions, queues, and real-time apps.",
         "icon": "https://icon.icepanel.io/Technology/svg/Redis.svg",
         "rating": 4.7,
         "difficulty": "Intermediate",

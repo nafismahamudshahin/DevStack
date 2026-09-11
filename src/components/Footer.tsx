@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className=" bg-base-200">
 
-            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-12 justify-between border-y pt-15 mt-15 border-slate-200 text-base-content py-10">
+            <div className="container mx-auto px-1 sm:px-2 md:px-3 lg:px-4 xl:px-0 grid grid-cols-1 lg:grid-cols-12 justify-between border-y pt-15 mt-15 border-slate-200 text-base-content py-10">
                 <div className='col-span-6 space-y-3'>
                     <div className='flex justify-center md:justify-start'>
                         <img src={Logo} alt="DevStack Logo" />
@@ -39,10 +39,10 @@ const Footer = () => {
                     <a className="link link-hover text-[#64748B]">Cookie policy</a>
                 </nav>
             </div>
-            <div className='container mx-auto pb-10 pt-4 flex justify-between text-[#64748B]'>
-                <p className=''>© {date} Dev Stack. All rights reserved.</p>
+            <div className='container mx-auto px-1 sm:px-2 md:px-3 lg:px-4 xl:px-0 pb-10 pt-4 flex flex-col justify-center md:flex-row  md:justify-between text-[#64748B]'>
+                <p className='text-center md:text-start'>© {date} Dev Stack. All rights reserved.</p>
                 <div>
-                    <ul className='flex gap-3'>
+                    <ul className='flex gap-3 justify-center md:justify-start'>
                         <li><a href="">Privacy</a></li>
                         <li><a href="">Terms</a></li>
                     </ul>
