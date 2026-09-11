@@ -49,7 +49,17 @@ const TechnologyCard = ({ technology, selectedTechnology, setSelectedTechnology 
                     </div>
                 </div>
                 {/* cart footer */}
-                <button disabled={select} onClick={() => handleSelectedTechnology(technology)} className={`btn rounded-2xl w-full ${select ? "bg-white text-pink-500 shadow" : "bg-[#0A0F1D] text-white"} flex gap-0`} >{select ? <IoIosCheckmark className="text-pink-500 text-4xl" /> : ""}Add to Stack</button>
+                <button
+                    disabled={select}
+                    onClick={() => handleSelectedTechnology(technology)}
+                    className={
+                        `btn rounded-2xl w-full 
+                         hover:bg-base-200 hover:border-pink-500  hover:text-pink-500 
+                        ${select ? "border-slate-200  text-pink-500 shadow"
+                            : "bg-[#0A0F1D] text-white"} flex gap-0`} >
+                    {select ? <IoIosCheckmark className="text-pink-500 text-4xl" />
+                        : ""}{select ? "Added to Stack" : "Add to Stack"}
+                </button>
 
             </div>
         </div>
