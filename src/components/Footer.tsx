@@ -2,8 +2,7 @@ import Logo from '../assets/logo-text.png';
 const Footer = () => {
     const date = new Date().getFullYear();
     return (
-        <footer className=" bg-base-200">
-
+        <footer className=" bg-base-200 pt-3 mt-15">
             <div className="container mx-auto px-1 sm:px-2 md:px-3 lg:px-4 xl:px-0 grid grid-cols-1 lg:grid-cols-12 justify-between border-y pt-15 mt-15 border-slate-200 text-base-content py-10">
                 <div className='col-span-6 space-y-3'>
                     <div className='flex justify-center md:justify-start'>
