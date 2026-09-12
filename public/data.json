@@ -17,7 +17,7 @@
         "icon": "https://icon.icepanel.io/Technology/svg/Vue.js.svg",
         "rating": 4.8,
         "difficulty": "Beginner",
-        "badge": "Easy to Learn"
+        "badge": "Modern"
     },
     {
         "id": "angular",
@@ -147,7 +147,7 @@
         "icon": "https://icon.icepanel.io/Technology/svg/Django.svg",
         "rating": 4.7,
         "difficulty": "Intermediate",
-        "badge": "Python"
+        "badge": "Modern"
     },
     {
         "id": "firebase",
@@ -157,7 +157,7 @@
         "icon": "https://icon.icepanel.io/Technology/svg/Firebase.svg",
         "rating": 4.7,
         "difficulty": "Beginner",
-        "badge": "Google"
+        "badge": "Modern"
     },
     {
         "id": "docker",
@@ -167,7 +167,7 @@
         "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
         "rating": 4.8,
         "difficulty": "Intermediate",
-        "badge": "DevOps"
+        "badge": "Popular"
     },
     {
         "id": "git",

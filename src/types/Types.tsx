@@ -8,3 +8,16 @@ export interface ITechnology {
     "difficulty": string,
     "badge": string
 }
+
+export interface IBadgeColorType {
+    Fast: string,
+    Popular: string,
+    Modern: string,
+    Enterprise: string,
+    Trending: string,
+    Essential: string,
+    Lightweight: string,
+    NoSQL: string,
+    "Top SQL": string,
+    Classic: string,
+}
